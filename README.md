@@ -9,8 +9,8 @@ dev-setup
 
 Setting up a new developer machine can be an **ad-hoc, manual, and time-consuming** process.  `dev-setup` aims to **simplify** the process with **easy-to-understand instructions** and **dotfiles/scripts** to **automate the setup** of the following:
 
-* **OS X updates and Xcode Command Line Tools**
-* **OS X defaults** geared towards developers
+* **macOS updates and Xcode Command Line Tools**
+* **macOS defaults** geared towards developers
 * **Developer tools**: Vim, bash, tab completion, curl, git, GNU core utils, Python, Ruby, etc
 * **Developer apps**: iTerm2, Sublime Text, Atom, VirtualBox, Vagrant, Docker, Chrome, etc
 * **Python data analysis**: IPython Notebook, NumPy, Pandas, Scikit-Learn, Matplotlib, etc
@@ -48,17 +48,17 @@ This repo takes a more **light-weight** approach to automation using a combinati
 
 ## Section 1: Installation
 
-**Scripts tested on OS X 10.10 Yosemite and 10.11 El Capitan.**
+**Scripts tested on macOS 10.13.4 High Sierra**
 
 * [Single Setup Script](#single-setup-script)
 * [bootstrap.sh script](#bootstrapsh-script)
     * Syncs dev-setup to your local home directory `~`
-* [osxprep.sh script](#osxprepsh-script)
-    * Updates OS X and installs Xcode command line tools
+* [macosprep.sh script](#macosprepsh-script)
+    * Updates macOS and installs Xcode command line tools
 * [brew.sh script](#brewsh-script)
     * Installs common Homebrew formulae and apps
-* [osx.sh script](#osxsh-script)
-    * Sets up OS X defaults geared towards developers
+* [macos.sh script](#macossh-script)
+    * Sets up macOS defaults geared towards developers
 * [pydata.sh script](#pydatash-script)
     * Sets up python for data analysis
 * [aws.sh script](#awssh-script)
@@ -72,7 +72,7 @@ This repo takes a more **light-weight** approach to automation using a combinati
 
 ## Section 2: General Apps and Tools
 
-* [Sublime Text](#sublime-text)
+<!--* [Sublime Text](#sublime-text)
 * [Atom](#atom)
 * [Terminal Customization](#terminal-customization)
 * [iTerm2](#iterm2)
@@ -87,9 +87,10 @@ This repo takes a more **light-weight** approach to automation using a combinati
 * [Pip](#pip)
 * [Virtualenv](#virtualenv)
 * [Virtualenvwrapper](#virtualenvwrapper)
+-->
 
 ## Section 3: Python Data Analysis
-
+<!--
 * [Anaconda](#anaconda)
 * [IPython Notebook](#ipython-notebook)
 * [NumPy](#numpy)
@@ -100,9 +101,11 @@ This repo takes a more **light-weight** approach to automation using a combinati
 * [SciPy](#scipy)
 * [Flask](#flask)
 * [Bokeh](#bokeh)
+-->
 
 ## Section 4: Big Data, AWS, and Heroku
 
+<!--
 * [Spark](#spark)
 * [MapReduce](#mapreduce)
 * [Awesome AWS](#awesome-aws-)
@@ -118,35 +121,39 @@ This repo takes a more **light-weight** approach to automation using a combinati
 * [Lambda](#lambda)
 * [AWS Machine Learning](#aws-machine-learning)
 * [Heroku](#heroku)
+-->
 
 ## Section 5: Data Stores
-
+<!--
 * [MySQL](#mysql)
 * [MySQL Workbench](#mysql-workbench)
 * [MongoDB](#mongodb)
 * [Redis](#redis)
 * [Elasticsearch](#elasticsearch)
+-->
 
 ## Section 6: JavaScript Web Development
-
+<!--
 * [Node.js](#nodejs)
 * [JSHint](#jshint)
 * [Less](#less)
+-->
 
 ## Section 7: Android Development
-
+<!--
 * [Java](#java)
 * [Android SDK](#android-sdk)
 * [Android Studio](#android-studio)
 * [IntelliJ IDEA](#intellij-idea)
+-->
 
 ## Section 8: Misc
-
+<!--
 * [Contributions](#contributions)
 * [Credits](#credits)
 * [Contact Info](#contact-info)
 * [License](#license)
-
+-->
 ## Section 1: Installation
 
 ### Single Setup Script
@@ -155,13 +162,13 @@ This repo takes a more **light-weight** approach to automation using a combinati
 
 ##### Clone the Repo
 
-    $ git clone https://github.com/donnemartin/dev-setup.git && cd dev-setup
+    $ git clone https://github.com/BigDutch15/dev-setup.git && cd dev-setup
 
 ##### Run the .dots Script with Command Line Arguments
 
 **Since you probably don't want to install every section**, the `.dots` script supports command line arguments to run only specified sections.  Simply pass in the [scripts](#scripts) that you want to install.  Below are some examples.
 
-**For more customization, you can [clone](#clone-the-repo) or [fork](https://github.com/donnemartin/dev-setup/fork) the repo and tweak the `.dots` script and its associated components to suit your needs.**
+**For more customization, you can [clone](#clone-the-repo) or [fork](https://github.com/BigDutch15/dev-setup/fork) the repo and tweak the `.dots` script and its associated components to suit your needs.**
 
 Run all:
 
@@ -177,13 +184,13 @@ Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh`, `pydata.sh`, `aws.sh`
 
 #### Running without Git
 
-    $ curl -O https://raw.githubusercontent.com/donnemartin/dev-setup/master/.dots && ./.dots [Add ARGS Here]
+    $ curl -O https://raw.githubusercontent.com/BigDutch15/dev-setup/master/.dots && ./.dots [Add ARGS Here]
 
 #### Scripts
 
-* [.dots](https://github.com/donnemartin/dev-setup/blob/master/.dots)
+* [.dots](https://github.com/BigDutch15/dev-setup/blob/master/.dots)
     * Runs specified scripts
-* [bootstrap.sh](https://github.com/donnemartin/dev-setup/blob/master/bootstrap.sh)
+* [bootstrap.sh](https://github.com/BigDutch15/dev-setup/blob/master/bootstrap.sh)
     * Syncs dev-setup to your local home directory `~`
 * [osxprep.sh](https://github.com/donnemartin/dev-setup/blob/master/osxprep.sh)
     * Updates OS X and installs Xcode command line tools
